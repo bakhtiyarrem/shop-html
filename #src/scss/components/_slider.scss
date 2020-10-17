@@ -1,0 +1,52 @@
+.homepage-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.homepage-slider__image{
+    width: 96%;
+    z-index: 1;
+    img{
+        width: 100%;
+    }
+}
+.homepage-slider__toggle {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.homepage-slider__count-number{
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+    color: $text-silver;
+    &::before{
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 50%;                        
+        transform: translate(0, -50%);
+        left: 1.5em;
+        width: 30px;
+        height: 2px;
+        background-color: $text-silver;
+        transition: 0.2s;
+    }
+    &.active{
+        color: $text-main;
+        &::before{
+            z-index: 2;
+            width: 100px;
+            background-color: $text-main;
+        }
+    }
+    &:not(.active):hover{
+        color: $text-main;
+        &::before{
+            width: 100px;
+            z-index: 4;
+            transition: 0.2s;
+            background-color: $text-main;
+        }
+    }
+}

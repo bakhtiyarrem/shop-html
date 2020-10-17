@@ -1,0 +1,14 @@
+@import 'common/variables';
+@import 'common/reset';
+@import 'common/fonts';
+@import 'components/all';
+
+body{
+    color: $text-main;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1em;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+
+.homepage-products {
+    padding-top: 60px;
+    &__tittle {
+        font-size: 1.1rem;
+        color: $text-main;
+        text-transform: uppercase;
+    }
+}
+.homepage-products__wrapper {
+    display: flex;
+    padding-top: 40px;
+}
