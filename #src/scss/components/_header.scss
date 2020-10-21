@@ -1,15 +1,18 @@
 .header {
-    min-width: 90px;
-    background-color: #fff;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
     font-size: 0.75rem;
     font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 110px;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
         & > div,nav{
-            width: 33%;
         }
     }
 }
@@ -34,9 +37,8 @@
 }
 
 .main-logo {
-    text-align: center;
     img{
-        width: 30%;
+        width: 50%;
     }
 }
 .header-menu {

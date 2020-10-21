@@ -17,6 +17,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 *{
 	box-sizing: border-box;
+	&::selection{
+		background-color: $text-main;
+		color: #fff;	
+	} 
 }
 body {
 	line-height: 1;
